@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.canvas {
+    margin: 100px auto 0 auto;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.canvas div {
+    /**/
+    position: absolute;
+}
+
+.paint{border: 1px solid #000000;}
+
+.cat-head .big {
+    width: 228px;
+    height: 207px;
+    border-radius: 100px;
+    background-color: #03A9F4;
+}
+
+.cat-head .small {
+    width: 204px;
+    height: 180px;
+    margin-top: 28px;
+    left: 13px;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+}
+
+.eyes .left-border {
+    width: 40px;
+    height: 45px;
+    border-radius: 20px;
+    left: 78px;
+    top: 10px;
+    background-color: #FFFFFF;
+}
+
+.eyes .left-eye {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #000000;
+    left: 5px;
+    top: 20px;;
+}
+
+.eyes .right-border {
+    width: 40px;
+    height: 45px;
+    border-radius: 20px;
+    left: 120px;
+    top: 10px;
+    background-color: #FFFFFF
+}
+
+.eyes .right-eye {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #000000;
+    left: 5px;
+    top: 20px;;
+}
+
+.left-eye,.right-eye{
+    animation: eyes-animation 1s linear 0s infinite;
+}
+
+
+.nose {
+    width: 20px;
+    height: 24px;
+    border-radius: 12px;
+    left: 110px;
+    top: 49px;
+}
+
+.beard {
+    left: 30px;
+    top: 96px;
+}
+
+.left-beard .one {
+    width: 60px;
+    height: 0px;
+    transform: rotate(8deg);
+}
+
+.left-beard .two {
+    width: 60px;
+    height: 0px;
+    margin-top: 20px;
+}
+
+.left-beard .three {
+    width: 60px;
+    height: 0px;
+    margin-top: 40px;
+    transform: rotate(-8deg)
+}
+
+.right-beard {
+    margin-left: 120px;
+}
+
+.right-beard .one {
+    width: 60px;
+    height: 0px;
+    transform: rotate(-8deg)
+}
+
+.right-beard .two {
+    width: 60px;
+    height: 0px;
+    margin-top: 20px
+}
+
+.right-beard .three {
+    width: 60px;
+    height: 0px;
+    margin-top: 40px;
+    transform: rotate(8deg)
+}
+
+.mouth {
+    left: 41px;
+    top: 94px;
+}
+
+.mouth .arc {
+    width: 153px;
+    height: 84px;
+    border-radius: 50%;
+    border-top: #FFFFFF;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 2px solid #000000
+}
+
+.mouth .vertical {
+    width: 0px;
+    height: 103px;
+    left: 77px;
+    top: -20px;
+}
+
+.neck {
+    width: 86px;
+    height: 4px;
+    top: 206px;
+    left: 75px;
+    background-color: #FFFFFF;
+}
+
+@keyframes eyes-animation {
+    from, to {
+    }
+
+    0%{transform: rotate(0deg);transform-origin: 15px 4px;}
+    20%{transform: rotate(60deg);transform-origin: 15px 4px;}
+    40%{transform: rotate(120deg);transform-origin: 15px 4px;}
+    60%{transform: rotate(180deg);transform-origin: 15px 4px;}
+    80%{transform: rotate(240deg);transform-origin: 15px 4px;}
+    100%{transform: rotate(360deg);transform-origin: 15px 4px;}
+}
